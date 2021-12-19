@@ -3,7 +3,6 @@ package tckimlik
 import (
 	"math/rand"
 	"strconv"
-	"time"
 )
 
 var (
@@ -14,8 +13,6 @@ var (
 )
 
 func Generate () string  {
-	tcIdentity = ""
-
 	// generate the first number (1 - 10)
 	digits[0] = RandomNumber(1,10)
 
@@ -44,10 +41,4 @@ func Generate () string  {
 	}
 
 	return tcIdentity
-}
-
-func RandomNumber(min int, max int) int {
-	rand.Seed(time.Now().UnixNano())
-	num := rand.Intn(max- min) +min
-	return  num
 }
