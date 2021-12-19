@@ -1,16 +1,14 @@
-# TC Kimlik Numarası    
+# TC Identity   
 
-TC Kimlik numarası oluşturucu
+TC identity generator
 
-
-
-## Bilgisayarınızda Çalıştırın
+## Run Your Computer
 
 ```bash
 go get -u github.com/yisleyen/tckimlik
 ```
 
-TC Kimlik numarası üretin
+Generate Tc identity
 
 ```bash
 package main
