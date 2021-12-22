@@ -5,14 +5,14 @@ import (
 	"strconv"
 )
 
-var (
-	digits [11]int
-	tcIdentity string
-	evenNumbersTotal int
-	oddNumbersTotal int
-)
-
 func Generate () string  {
+	var (
+		digits [11]int
+		tcIdentity string
+		evenNumbersTotal int
+		oddNumbersTotal int
+	)
+
 	// generate the first number (1 - 10)
 	digits[0] = RandomNumber(1,10)
 
