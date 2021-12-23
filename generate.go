@@ -1,7 +1,6 @@
 package tckimlik
 
 import (
-	"math/rand"
 	"strconv"
 )
 
@@ -18,11 +17,11 @@ func Generate () string  {
 
 	// generate other numbers (2-3-4-5-6-7-8)
 	for i:= 1; i<9; i++ {
-		digits[i] = rand.Intn(10-0) + 0
+		digits[i] = RandomNumber(0,10)
 	}
 
 	// Calculate the sum of even and odd numbers
-	for i:= 1; i<9; i++ {
+	for i:= 0; i<9; i++ {
 		if i%2==0 {
 			evenNumbersTotal += digits[i]
 		} else {
