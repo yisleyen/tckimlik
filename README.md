@@ -1,6 +1,6 @@
 # TC Identity   
 
-TC identity generator
+TC identity generator and validate
 
 ## Run Your Computer
 
