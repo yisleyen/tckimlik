@@ -13,9 +13,9 @@ func TestGenerate(t *testing.T) {
 		},
 	}
 	for _, test := range tests {
-		valid, err := Validate(test.data)
-		if !valid || err != nil {
-			t.Errorf("Generate() = %v, want %v", valid, test.data)
+		isValid, err := Validate(test.data)
+		if !isValid || err != nil {
+			t.Errorf("Generate() = %v, %v", isValid, test.data)
 		}
 	}
 }
