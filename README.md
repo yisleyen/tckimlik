@@ -8,7 +8,7 @@ TC identity generator and validate
 go get -u github.com/yisleyen/tckimlik
 ```
 
-Generate Tc identity
+###Generate Tc identity
 
 ```bash
 package main
@@ -23,7 +23,7 @@ func main()  {
 }
 ```
 
-Validate Tc identity
+###Validate Tc identity
 
 ```bash
 package main
