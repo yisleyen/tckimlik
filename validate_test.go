@@ -28,7 +28,7 @@ func TestValidate(t *testing.T) {
 	for _, tc := range tests {
 		t.Run(tc.name, func(t *testing.T) {
 			isValid, err := Validate(tc.tckimlik)
-			if (err != nil) {
+			if err != nil {
 				t.Errorf("Validate() error = %v", err)
 				return
 			}
